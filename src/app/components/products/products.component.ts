@@ -9,7 +9,7 @@ export class ProductsComponent {
   categories: any[] = [
     {
       name: 'Clothes',
-      imgUrl: '../../../assets/images/icons/dress.svg',
+      imgUrl: '/assets/images/icons/dress.svg',
       types: [
         { name: 'Shirt', num: '300' },
         { name: 'Shorts & Jeans', num: '70' },
@@ -19,7 +19,7 @@ export class ProductsComponent {
     },
     {
       name: 'Footwear',
-      imgUrl: '../../../assets/images/icons/shoes.svg',
+      imgUrl: '/assets/images/icons/shoes.svg',
       types: [
         { name: 'Sports', num: '45' },
         { name: 'Formal', num: '75' },
@@ -29,7 +29,7 @@ export class ProductsComponent {
     },
     {
       name: 'Jewelry',
-      imgUrl: '../../../assets/images/icons/jewelry.svg',
+      imgUrl: '/assets/images/icons/jewelry.svg',
       types: [
         { name: 'Earrings', num: '45' },
         { name: 'Couple Rings', num: '75' },
@@ -38,7 +38,7 @@ export class ProductsComponent {
     },
     {
       name: 'Perfume',
-      imgUrl: '../../../assets/images/icons/perfume.svg',
+      imgUrl: '/assets/images/icons/perfume.svg',
       types: [
         { name: 'Clothes Perfume', num: '45' },
         { name: 'Deodorant', num: '75' },
@@ -48,7 +48,7 @@ export class ProductsComponent {
     },
     {
       name: 'Cosmetics',
-      imgUrl: '../../../assets/images/icons/cosmetics.svg',
+      imgUrl: '/assets/images/icons/cosmetics.svg',
       types: [
         { name: 'Shampoo', num: '45' },
         { name: 'Sunscreen', num: '75' },
@@ -58,7 +58,7 @@ export class ProductsComponent {
     },
     {
       name: 'Glasses',
-      imgUrl: '../../../assets/images/icons/glasses.svg',
+      imgUrl: '/assets/images/icons/glasses.svg',
       types: [
         { name: 'Sunglasses', num: '45' },
         { name: 'Lenses', num: '75' },
@@ -66,7 +66,7 @@ export class ProductsComponent {
     },
     {
       name: 'Bags',
-      imgUrl: '../../../assets/images/icons/bag.svg',
+      imgUrl: '/assets/images/icons/bag.svg',
       types: [
         { name: 'Shopping Bag', num: '45' },
         { name: 'Gym Backpack', num: '75' },
@@ -80,97 +80,97 @@ export class ProductsComponent {
     name:'Baby Fabric Shoes',
     lastPrice:'$5.00',
     newPrice:'$4.00',
-    img:'../../../assets/images/products/1.jpg',
+    img:'/assets/images/products/1.jpg',
   },
     {
     name:"Men's Hoodies T-Shirt",
     lastPrice:'$17.00',
     newPrice:'$7.00',
-    img:'../../../assets/images/products/2.jpg',
+    img:'/assets/images/products/2.jpg',
   },
     {
     name:'Girls T-Shirt',
     lastPrice:'$5.00',
     newPrice:'$3.00',
-    img:'../../../assets/images/products/3.jpg',
+    img:'/assets/images/products/3.jpg',
   },
     {
     name:'Woolen Hat For Men',
     lastPrice:'$15.00',
     newPrice:'$12.00',
-    img:'../../../assets/images/products/4.jpg',
+    img:'/assets/images/products/4.jpg',
   },
     {
     name:'Baby Fabric Shoes',
     lastPrice:'$5.00',
     newPrice:'$4.00',
-    img:'../../../assets/images/products/1.jpg',
+    img:'/assets/images/products/1.jpg',
   },
     {
     name:"Men's Hoodies T-Shirt",
     lastPrice:'$17.00',
     newPrice:'$7.00',
-    img:'../../../assets/images/products/2.jpg',
+    img:'/assets/images/products/2.jpg',
   },
     {
     name:'Girls T-Shirt',
     lastPrice:'$5.00',
     newPrice:'$3.00',
-    img:'../../../assets/images/products/3.jpg',
+    img:'/assets/images/products/3.jpg',
   },
     {
     name:'Woolen Hat For Men',
     lastPrice:'$15.00',
     newPrice:'$12.00',
-    img:'../../../assets/images/products/4.jpg',
+    img:'/assets/images/products/4.jpg',
   },
     {
     name:'Baby Fabric Shoes',
     lastPrice:'$5.00',
     newPrice:'$4.00',
-    img:'../../../assets/images/products/1.jpg',
+    img:'/assets/images/products/1.jpg',
   },
     {
     name:"Men's Hoodies T-Shirt",
     lastPrice:'$17.00',
     newPrice:'$7.00',
-    img:'../../../assets/images/products/2.jpg',
+    img:'/assets/images/products/2.jpg',
   },
     {
     name:'Girls T-Shirt',
     lastPrice:'$5.00',
     newPrice:'$3.00',
-    img:'../../../assets/images/products/3.jpg',
+    img:'/assets/images/products/3.jpg',
   },
     {
     name:'Woolen Hat For Men',
     lastPrice:'$15.00',
     newPrice:'$12.00',
-    img:'../../../assets/images/products/4.jpg',
+    img:'/assets/images/products/4.jpg',
   },
     {
     name:'Baby Fabric Shoes',
     lastPrice:'$5.00',
     newPrice:'$4.00',
-    img:'../../../assets/images/products/1.jpg',
+    img:'/assets/images/products/1.jpg',
   },
     {
     name:"Men's Hoodies T-Shirt",
     lastPrice:'$17.00',
     newPrice:'$7.00',
-    img:'../../../assets/images/products/2.jpg',
+    img:'/assets/images/products/2.jpg',
   },
     {
     name:'Girls T-Shirt',
     lastPrice:'$5.00',
     newPrice:'$3.00',
-    img:'../../../assets/images/products/3.jpg',
+    img:'/assets/images/products/3.jpg',
   },
     {
     name:'Woolen Hat For Men',
     lastPrice:'$15.00',
     newPrice:'$12.00',
-    img:'../../../assets/images/products/4.jpg',
+    img:'/assets/images/products/4.jpg',
   },
 ]
 newArrivals: any[] = [
@@ -179,56 +179,56 @@ newArrivals: any[] = [
     category: 'Clothes',
     price: '$45.00',
     oldPrice: '$12.00',
-    imgUrl: '../../../assets/images/products/clothes-1.jpg',
+    imgUrl: '/assets/images/products/clothes-1.jpg',
   },
   {
     name: 'Girls Pnk Embro Design Top',
     category: 'Clothes',
     price: '$61.00',
     oldPrice: '$9.00',
-    imgUrl: '../../../assets/images/products/clothes-2.jpg',
+    imgUrl: '/assets/images/products/clothes-2.jpg',
   },
   {
     name: 'Black Floral Wrap Midi Skirt',
     category: 'Clothes',
     price: '$76.00',
     oldPrice: '$25.00',
-    imgUrl: '../../../assets/images/products/clothes-3.jpg',
+    imgUrl: '/assets/images/products/clothes-3.jpg',
   },
   {
     name: 'Pure Garment Dyed Cotton Shirt',
     category: 'Mens Fashion',
     price: '$68.00',
     oldPrice: '$31.00',
-    imgUrl: '../../../assets/images/products/shirt-1.jpg',
+    imgUrl: '/assets/images/products/shirt-1.jpg',
   },
   {
     name: 'MEN Yarn Fleece Full-Zip Jacket',
     category: 'Winter Wear',
     price: '$61.00',
     oldPrice: '$11.00',
-    imgUrl: '../../../assets/images/products/jacket-5.jpg',
+    imgUrl: '/assets/images/products/jacket-5.jpg',
   },
   {
     name: 'Boot With Suede Detail',
     category: 'Boots',
     price: '$20.00',
     oldPrice: '$30.00',
-    imgUrl: '../../../assets/images/products/jacket-1.jpg',
+    imgUrl: '/assets/images/products/jacket-1.jpg',
   },
   {
     name: "Men's Leather Formal Wear Shoes",
     category: 'Formal',
     price: '$56.00',
     oldPrice: '$78.00',
-    imgUrl: '../../../assets/images/products/jacket-3.jpg',
+    imgUrl: '/assets/images/products/jacket-3.jpg',
   },
   {
     name: "Casual Men's Brown Shoes",
     category: 'Casual',
     price: '$50.00',
     oldPrice: '$55.00',
-    imgUrl: '../../../assets/images/products/shorts-1.jpg',
+    imgUrl: '/assets/images/products/shorts-1.jpg',
   },
 ];
 
@@ -240,56 +240,56 @@ Trending: any[] = [
     category: 'Watches',
     price: '$50.00',
     oldPrice: '$34.00',
-    imgUrl: '../../../assets/images/products/sports-1.jpg',
+    imgUrl: '/assets/images/products/sports-1.jpg',
   },
   {
     name: 'Silver Deer Heart Necklace',
     category: 'Jewellery',
     price: '$84.00',
     oldPrice: '$30.00',
-    imgUrl: '../../../assets/images/products/sports-2.jpg',
+    imgUrl: '/assets/images/products/sports-2.jpg',
   },
   {
     name: 'Titan 100 Ml Womens Perfume',
     category: 'Perfume',
     price: '$42.00',
     oldPrice: '$10.00',
-    imgUrl: '../../../assets/images/products/party-wear-1.jpg',
+    imgUrl: '/assets/images/products/party-wear-1.jpg',
   },
   {
     name: "Men's Leather Reversible Belt",
     category: 'Belt',
     price: '$24.00',
     oldPrice: '$10.00',
-    imgUrl: '../../../assets/images/products/sports-3.jpg',
+    imgUrl: '/assets/images/products/sports-3.jpg',
   },
   {
     name: 'Platinum Zircon Classic Ring',
     category: 'Jewellery',
     price: '$62.00',
     oldPrice: '$65.00',
-    imgUrl: '../../../assets/images/products/sports-6.jpg',
+    imgUrl: '/assets/images/products/sports-6.jpg',
   },
   {
     name: 'Smart Watche Vital Plus',
     category: 'Watches',
     price: '$56.00',
     oldPrice: '$78.00',
-    imgUrl: '../../../assets/images/products/shoe-3.jpg',
+    imgUrl: '/assets/images/products/shoe-3.jpg',
   },
   {
     name: 'Shampoo Conditioner Packs',
     category: 'Cosmetics',
     price: '$20.00',
     oldPrice: '$30.00',
-    imgUrl: '../../../assets/images/products/shoe-1.jpg',
+    imgUrl: '/assets/images/products/shoe-1.jpg',
   },
   {
     name: 'Rose Gold Peacock Earrings',
     category: 'Jewellery',
     price: '$20.00',
     oldPrice: '$30.00',
-    imgUrl: '../../../assets/images/products/shoe-2.jpg',
+    imgUrl: '/assets/images/products/shoe-2.jpg',
   },
 ];
 topRated: any[] = [
@@ -298,56 +298,56 @@ topRated: any[] = [
     category: 'Sports',
     price: '$49.00',
     oldPrice: '$15.00',
-    imgUrl: '../../../assets/images/products/watch-3.jpg',
+    imgUrl: '/assets/images/products/watch-3.jpg',
   },
   {
     name: 'Trekking & Running Shoes - Black',
     category: 'Sports',
     price: '$78.00',
     oldPrice: '$36.00',
-    imgUrl: '../../../assets/images/products/jewellery-3.jpg',
+    imgUrl: '/assets/images/products/jewellery-3.jpg',
   },
   {
     name: 'Womens Party Wear Shoes',
     category: 'Party Wear',
     price: '$94.00',
     oldPrice: '$42.00',
-    imgUrl: '../../../assets/images/products/perfume.jpg',
+    imgUrl: '/assets/images/products/perfume.jpg',
   },
   {
     name: "Sports Claw Women's Shoes",
     category: 'Sports',
     price: '$54.00',
     oldPrice: '$65.00',
-    imgUrl: '../../../assets/images/products/belt.jpg',
+    imgUrl: '/assets/images/products/belt.jpg',
   },
   {
     name: 'Air Trekking Shoes - White',
     category: 'Sports',
     price: '$52.00',
     oldPrice: '$55.00',
-    imgUrl: '../../../assets/images/products/jewellery-2.jpg',
+    imgUrl: '/assets/images/products/jewellery-2.jpg',
   },
   {
     name: 'Boot With Suede Detail',
     category: 'Boots',
     price: '$20.00',
     oldPrice: '$30.00',
-    imgUrl: '../../../assets/images/products/watch-1.jpg',
+    imgUrl: '/assets/images/products/watch-1.jpg',
   },
   {
     name: "Men's Leather Formal Wear Shoes",
     category: 'Formal',
     price: '$56.00',
     oldPrice: '$78.00',
-    imgUrl: '../../../assets/images/products/shampoo.jpg',
+    imgUrl: '/assets/images/products/shampoo.jpg',
   },
   {
     name: "Casual Men's Brown Shoes",
     category: 'Casual',
     price: '$50.00',
     oldPrice: '$55.00',
-    imgUrl: '../../../assets/images/products/jewellery-1.jpg',
+    imgUrl: '/assets/images/products/jewellery-1.jpg',
   },
 ];
 
@@ -360,8 +360,8 @@ newProducts: any[] = [
     newPrice: '$48.00',
     lastPrice: '$75.00',
     imgs:[
-      '../../../assets/images/products/jacket-3.jpg',
-      '../../../assets/images/products/jacket-4.jpg'
+      '/assets/images/products/jacket-3.jpg',
+      '/assets/images/products/jacket-4.jpg'
     ],
   },
   {
@@ -371,8 +371,8 @@ newProducts: any[] = [
     lastPrice: '$56.00',
     offer:    'SALE',
     imgs:[
-      '../../../assets/images/products/shirt-1.jpg',
-      '../../../assets/images/products/shirt-2.jpg'
+      '/assets/images/products/shirt-1.jpg',
+      '/assets/images/products/shirt-2.jpg'
     ]
   },
   {
@@ -382,8 +382,8 @@ newProducts: any[] = [
     lastPrice: '$65.00',
     offer:    '',
     imgs:[
-      '../../../assets/images/products/jacket-5.jpg',
-      '../../../assets/images/products/jacket-6.jpg'
+      '/assets/images/products/jacket-5.jpg',
+      '/assets/images/products/jacket-6.jpg'
     ]
   },
   {
@@ -393,8 +393,8 @@ newProducts: any[] = [
     lastPrice: '$35.00',
     offer:    '',
     imgs:[
-      '../../../assets/images/products/clothes-3.jpg',
-      '../../../assets/images/products/clothes-4.jpg'
+      '/assets/images/products/clothes-3.jpg',
+      '/assets/images/products/clothes-4.jpg'
     ]
   },
   {
@@ -404,8 +404,8 @@ newProducts: any[] = [
     lastPrice: '$105.00',
     offer:    '',
     imgs:[
-      '../../../assets/images/products/shoe-2.jpg',
-      '../../../assets/images/products/shoe-2_1.jpg'
+      '/assets/images/products/shoe-2.jpg',
+      '/assets/images/products/shoe-2_1.jpg'
     ]
 
   },
@@ -416,8 +416,8 @@ newProducts: any[] = [
     lastPrice: '$170.00',
     offer:    'SALE',
     imgs:[
-      '../../../assets/images/products/watch-3.jpg',
-      '../../../assets/images/products/watch-4.jpg'
+      '/assets/images/products/watch-3.jpg',
+      '/assets/images/products/watch-4.jpg'
     ]
   },
   {
@@ -427,8 +427,8 @@ newProducts: any[] = [
     lastPrice: '$120.00',
     offer:    '',
     imgs:[
-      '../../../assets/images/products/watch-1.jpg',
-      '../../../assets/images/products/watch-2.jpg'
+      '/assets/images/products/watch-1.jpg',
+      '/assets/images/products/watch-2.jpg'
     ]
   },
   {
@@ -438,8 +438,8 @@ newProducts: any[] = [
     lastPrice: '$30.00',
     offer:    'SALE',
     imgs:[
-      '../../../assets/images/products/jacket-1.jpg',
-      '../../../assets/images/products/jacket-2.jpg'
+      '/assets/images/products/jacket-1.jpg',
+      '/assets/images/products/jacket-2.jpg'
     ]
   },
   {
@@ -449,8 +449,8 @@ newProducts: any[] = [
     lastPrice: '$45.00',
     offer:    '',
     imgs:[
-      '../../../assets/images/products/jacket-1.jpg',
-      '../../../assets/images/products/jacket-2.jpg'
+      '/assets/images/products/jacket-1.jpg',
+      '/assets/images/products/jacket-2.jpg'
     ]
   },
   {
@@ -460,8 +460,8 @@ newProducts: any[] = [
     lastPrice: '$64.00',
     offer:    'SALE',
     imgs:[
-      '../../../assets/images/products/sports-2.jpg',
-      '../../../assets/images/products/sports-4.jpg'
+      '/assets/images/products/sports-2.jpg',
+      '/assets/images/products/sports-4.jpg'
     ]
   },
   {
@@ -471,8 +471,8 @@ newProducts: any[] = [
     lastPrice: '$65.00',
     offer:    '',
     imgs:[
-      '../../../assets/images/products/shoe-1.jpg',
-      '../../../assets/images/products/shoe-1_1.jpg'
+      '/assets/images/products/shoe-1.jpg',
+      '/assets/images/products/shoe-1_1.jpg'
     ]
   },
   {
@@ -482,8 +482,8 @@ newProducts: any[] = [
     lastPrice: '$85.00',
     offer:    'SALE',
     imgs:[
-      '../../../assets/images/products/shorts-1.jpg',
-      '../../../assets/images/products/shorts-2.jpg'
+      '/assets/images/products/shorts-1.jpg',
+      '/assets/images/products/shorts-2.jpg'
     ]
   },
 

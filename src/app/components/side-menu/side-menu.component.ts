@@ -14,7 +14,7 @@ export class SideMenuComponent {
   categories: any[] = [
     {
       name: 'Clothes',
-      imgUrl: '../../../assets/images/icons/dress.svg',
+      imgUrl: '/assets/images/icons/dress.svg',
       types: [
         { name: 'Shirt', num: '300' },
         { name: 'Shorts & Jeans', num: '70' },
@@ -24,7 +24,7 @@ export class SideMenuComponent {
     },
     {
       name: 'Footwear',
-      imgUrl: '../../../assets/images/icons/shoes.svg',
+      imgUrl: '/assets/images/icons/shoes.svg',
       types: [
         { name: 'Sports', num: '45' },
         { name: 'Formal', num: '75' },
@@ -34,7 +34,7 @@ export class SideMenuComponent {
     },
     {
       name: 'Jewelry',
-      imgUrl: '../../../assets/images/icons/jewelry.svg',
+      imgUrl: '/assets/images/icons/jewelry.svg',
       types: [
         { name: 'Earrings', num: '45' },
         { name: 'Couple Rings', num: '75' },
@@ -43,7 +43,7 @@ export class SideMenuComponent {
     },
     {
       name: 'Perfume',
-      imgUrl: '../../../assets/images/icons/perfume.svg',
+      imgUrl: '/assets/images/icons/perfume.svg',
       types: [
         { name: 'Clothes Perfume', num: '45' },
         { name: 'Deodorant', num: '75' },
@@ -53,7 +53,7 @@ export class SideMenuComponent {
     },
     {
       name: 'Cosmetics',
-      imgUrl: '../../../assets/images/icons/cosmetics.svg',
+      imgUrl: '/assets/images/icons/cosmetics.svg',
       types: [
         { name: 'Shampoo', num: '45' },
         { name: 'Sunscreen', num: '75' },
@@ -63,7 +63,7 @@ export class SideMenuComponent {
     },
     {
       name: 'Glasses',
-      imgUrl: '../../../assets/images/icons/glasses.svg',
+      imgUrl: '/assets/images/icons/glasses.svg',
       types: [
         { name: 'Sunglasses', num: '45' },
         { name: 'Lenses', num: '75' },
@@ -71,7 +71,7 @@ export class SideMenuComponent {
     },
     {
       name: 'Bags',
-      imgUrl: '../../../assets/images/icons/bag.svg',
+      imgUrl: '/assets/images/icons/bag.svg',
       types: [
         { name: 'Shopping Bag', num: '45' },
         { name: 'Gym Backpack', num: '75' },
@@ -109,97 +109,97 @@ export class SideMenuComponent {
     name:'Baby Fabric Shoes',
     lastPrice:'$5.00',
     newPrice:'$4.00',
-    img:'../../../assets/images/products/1.jpg',
+    img:'/assets/images/products/1.jpg',
   },
     {
     name:"Men's Hoodies T-Shirt",
     lastPrice:'$17.00',
     newPrice:'$7.00',
-    img:'../../../assets/images/products/2.jpg',
+    img:'/assets/images/products/2.jpg',
   },
     {
     name:'Girls T-Shirt',
     lastPrice:'$5.00',
     newPrice:'$3.00',
-    img:'../../../assets/images/products/3.jpg',
+    img:'/assets/images/products/3.jpg',
   },
     {
     name:'Woolen Hat For Men',
     lastPrice:'$15.00',
     newPrice:'$12.00',
-    img:'../../../assets/images/products/4.jpg',
+    img:'/assets/images/products/4.jpg',
   },
     {
     name:'Baby Fabric Shoes',
     lastPrice:'$5.00',
     newPrice:'$4.00',
-    img:'../../../assets/images/products/1.jpg',
+    img:'/assets/images/products/1.jpg',
   },
     {
     name:"Men's Hoodies T-Shirt",
     lastPrice:'$17.00',
     newPrice:'$7.00',
-    img:'../../../assets/images/products/2.jpg',
+    img:'/assets/images/products/2.jpg',
   },
     {
     name:'Girls T-Shirt',
     lastPrice:'$5.00',
     newPrice:'$3.00',
-    img:'../../../assets/images/products/3.jpg',
+    img:'/assets/images/products/3.jpg',
   },
     {
     name:'Woolen Hat For Men',
     lastPrice:'$15.00',
     newPrice:'$12.00',
-    img:'../../../assets/images/products/4.jpg',
+    img:'/assets/images/products/4.jpg',
   },
     {
     name:'Baby Fabric Shoes',
     lastPrice:'$5.00',
     newPrice:'$4.00',
-    img:'../../../assets/images/products/1.jpg',
+    img:'/assets/images/products/1.jpg',
   },
     {
     name:"Men's Hoodies T-Shirt",
     lastPrice:'$17.00',
     newPrice:'$7.00',
-    img:'../../../assets/images/products/2.jpg',
+    img:'/assets/images/products/2.jpg',
   },
     {
     name:'Girls T-Shirt',
     lastPrice:'$5.00',
     newPrice:'$3.00',
-    img:'../../../assets/images/products/3.jpg',
+    img:'/assets/images/products/3.jpg',
   },
     {
     name:'Woolen Hat For Men',
     lastPrice:'$15.00',
     newPrice:'$12.00',
-    img:'../../../assets/images/products/4.jpg',
+    img:'/assets/images/products/4.jpg',
   },
     {
     name:'Baby Fabric Shoes',
     lastPrice:'$5.00',
     newPrice:'$4.00',
-    img:'../../../assets/images/products/1.jpg',
+    img:'/assets/images/products/1.jpg',
   },
     {
     name:"Men's Hoodies T-Shirt",
     lastPrice:'$17.00',
     newPrice:'$7.00',
-    img:'../../../assets/images/products/2.jpg',
+    img:'/assets/images/products/2.jpg',
   },
     {
     name:'Girls T-Shirt',
     lastPrice:'$5.00',
     newPrice:'$3.00',
-    img:'../../../assets/images/products/3.jpg',
+    img:'/assets/images/products/3.jpg',
   },
     {
     name:'Woolen Hat For Men',
     lastPrice:'$15.00',
     newPrice:'$12.00',
-    img:'../../../assets/images/products/4.jpg',
+    img:'/assets/images/products/4.jpg',
   },
 ]
 }
