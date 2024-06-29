@@ -1,0 +1,188 @@
+<div class="home pt-4">
+  <div class="nav d-lg-block d-none">
+    <ul class="w-100 centerCenter position-relative">
+      <li class="liNav">home</li>
+      <li class="liNav categories">categories</li>
+      <li class="liNav">men's
+        <div>
+          <ul>
+            <li>Shirt</li>
+            <li>Shorts & Jeans</li>
+            <li>Safety Shoes</li>
+            <li>Wallet</li>
+          </ul>
+        </div>
+      </li>
+      <li class="liNav">women's
+        <div>
+          <ul>
+            <li>Dress & Frock</li>
+            <li>Earrings</li>
+            <li>Necklace</li>
+            <li>Makeup Kit</li>
+          </ul>
+        </div>
+      </li>
+      <li class="liNav">jewelry
+
+        <div>
+          <ul>
+            <li>Earrings</li>
+            <li>Couple Rings</li>
+            <li>Necklace</li>
+            <li>Bracelets</li>
+          </ul>
+        </div>
+      </li>
+      <li class="liNav">Perfume
+
+        <div>
+          <ul>
+            <li>Clothes Perfume</li>
+            <li>Deodorant</li>
+            <li>Flower Fragrance</li>
+            <li>Air Freshener</li>
+          </ul>
+        </div>
+      </li>
+      <li class="liNav">blog</li>
+      <li class="liNav">hot offers</li>
+      <div class="categoriesDiv col-12 row centerCenter" id="categoriesDiv">
+        <div class="col-11 row  box-shadow bg-white">
+          <div class="col-3">
+            <h5 class="w-100 border-bottom">Electronics</h5>
+            <ul>
+              <li>Desktop</li>
+              <li>Laptop</li>
+              <li>Camera</li>
+              <li>Tablet</li>
+              <li>Headphone</li>
+            </ul>
+            <div class="img1 img"></div>
+          </div>
+          <div class="col-3">
+            <h5 class="w-100 border-bottom">Men's</h5>
+            <ul>
+              <li>Formal</li>
+              <li>Casual</li>
+              <li>Sports</li>
+              <li>Jacket</li>
+              <li>Sunglasses</li>
+            </ul>
+            <div class="img2 img"></div>
+          </div>
+          <div class="col-3">
+            <h5 class="w-100 border-bottom">Women's</h5>
+            <ul>
+              <li>Formal</li>
+              <li>Casual</li>
+              <li>Perfume</li>
+              <li>Cosmetics</li>
+              <li>Bags</li>
+            </ul>
+            <div class="img3 img"></div>
+          </div>
+          <div class="col-3">
+            <h5 class="w-100 border-bottom">Electronics</h5>
+            <ul>
+              <li>Smart Watch</li>
+              <li>Smart TV</li>
+              <li>Keyboard</li>
+              <li>Mouse</li>
+              <li>Microphone</li>
+            </ul>
+            <div class="img4 img"></div>
+          </div>
+        </div>
+      </div>
+
+    </ul>
+  </div>
+
+
+<app-header></app-header>
+<app-offers></app-offers>
+<app-products></app-products>
+<app-summer></app-summer>
+<app-advertisement></app-advertisement>
+
+</div>
+
+
+
+<div class="position-fixed bottom-0 d-flex align-items-center justify-content-center col-12 row m-0">
+  <app-bot-btns (list)="openList($event)" (menu)="openMenu($event)"></app-bot-btns>
+</div>
+<div class="side-list" [ngClass]="sideList?'open':''"><app-side-list (closeX)="sideList = false"></app-side-list></div>
+<div class="side-menu" [ngClass]="sideMenu?'open':''"><app-side-menu (closeX)="sideMenu = false"></app-side-menu></div>
+<!--
+<footer class="footer">
+  <div class="div1 border-bottom d-flex align-items-start justify-content-center  px-5 flex-column">
+    <p class="mainColor fw-bolder">BRAND DIRECTORY</p>
+
+    <div class="footer-category-box">
+
+      <h3 class="category-box-title">Fashion :</h3>
+
+      <a href="#" class="footer-category-link text-capitalize">T-shirt</a>
+      <a href="#" class="footer-category-link text-capitalize">Shirts</a>
+      <a href="#" class="footer-category-link text-capitalize">shorts &amp; jeans</a>
+      <a href="#" class="footer-category-link text-capitalize">jacket</a>
+      <a href="#" class="footer-category-link text-capitalize">dress &amp; frock</a>
+      <a href="#" class="footer-category-link text-capitalize">innerwear</a>
+      <a href="#" class="footer-category-link text-capitalize">hosiery</a>
+
+    </div>
+    <div class="footer-category-box">
+      <h3 class="category-box-title">footwear :</h3>
+
+      <a href="#" class="footer-category-link">sport</a>
+      <a href="#" class="footer-category-link">formal</a>
+      <a href="#" class="footer-category-link">Boots</a>
+      <a href="#" class="footer-category-link">casual</a>
+      <a href="#" class="footer-category-link">cowboy shoes</a>
+      <a href="#" class="footer-category-link">safety shoes</a>
+      <a href="#" class="footer-category-link">Party wear shoes</a>
+      <a href="#" class="footer-category-link">Branded</a>
+      <a href="#" class="footer-category-link">Firstcopy</a>
+      <a href="#" class="footer-category-link">Long shoes</a>
+    </div>
+    <div class="footer-category-box">
+      <h3 class="category-box-title">jewellery :</h3>
+
+      <a href="#" class="footer-category-link">Necklace</a>
+      <a href="#" class="footer-category-link">Earrings</a>
+      <a href="#" class="footer-category-link">Couple rings</a>
+      <a href="#" class="footer-category-link">Pendants</a>
+      <a href="#" class="footer-category-link">Crystal</a>
+      <a href="#" class="footer-category-link">Bangles</a>
+      <a href="#" class="footer-category-link">bracelets</a>
+      <a href="#" class="footer-category-link">nosepin</a>
+      <a href="#" class="footer-category-link">chain</a>
+      <a href="#" class="footer-category-link">Earrings</a>
+      <a href="#" class="footer-category-link">Couple rings</a>
+    </div>
+    <div class="footer-category-box">
+      <h3 class="category-box-title">cosmetics :</h3>
+
+      <a href="#" class="footer-category-link">Shampoo</a>
+      <a href="#" class="footer-category-link">Bodywash</a>
+      <a href="#" class="footer-category-link">Facewash</a>
+      <a href="#" class="footer-category-link">makeup kit</a>
+      <a href="#" class="footer-category-link">liner</a>
+      <a href="#" class="footer-category-link">lipstick</a>
+      <a href="#" class="footer-category-link">prefume</a>
+      <a href="#" class="footer-category-link">Body soap</a>
+      <a href="#" class="footer-category-link">scrub</a>
+      <a href="#" class="footer-category-link">hair gel</a>
+      <a href="#" class="footer-category-link">hair colors</a>
+      <a href="#" class="footer-category-link">hair dye</a>
+      <a href="#" class="footer-category-link">sunscreen</a>
+      <a href="#" class="footer-category-link">skin loson</a>
+      <a href="#" class="footer-category-link">liner</a>
+      <a href="#" class="footer-category-link">lipstick</a>
+    </div>
+  </div>
+  <div class="div2"></div>
+  <div class="div3"></div>
+</footer> -->

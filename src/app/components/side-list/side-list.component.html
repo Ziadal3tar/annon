@@ -1,0 +1,67 @@
+<div class="p-3">
+  <div class="centerBetween d-flex border-bottom pb-3 mb-3">
+    <p class="mainColor fs-5">
+      Menu
+    </p>
+    <i class="bi bi-x-lg" (click)="close()"></i>
+  </div>
+  <div>
+    <ul class="firstUl">
+      <li>
+        <p>Home</p>
+      </li>
+      <li class="">
+        <div class="title centerBetween">
+          <p>Men's</p>
+          <i class="bi bi-plus fw-bold fs-5 fw-bold fs-5" (click)="openUl($event,'ul1')"></i>
+        </div>
+        <div>
+          <ul id="ul1">
+            <li>subCategory</li>
+            <li>subCategory</li>
+            <li>subCategory</li>
+          </ul>
+        </div>
+      </li>
+      <li class="">
+        <div class="title centerBetween">
+          <p>Women's </p>
+          <i class="bi bi-plus fw-bold fs-5" (click)="openUl($event,'ul2')"></i>
+        </div>
+        <ul id="ul2">
+          <li>subCategory</li>
+          <li>subCategory</li>
+          <li>subCategory</li>
+        </ul>
+      </li>
+      <li class="">
+        <div class="title centerBetween">
+          <p>jewelry</p>
+          <i class="bi bi-plus fw-bold fs-5" (click)="openUl($event,'ul3')"></i>
+        </div>
+        <ul id="ul3">
+          <li>subCategory</li>
+          <li>subCategory</li>
+          <li>subCategory</li>
+        </ul>
+      </li>
+      <li>
+        <div class="title centerBetween">
+          <p>Perfume</p>
+          <i class="bi bi-plus fw-bold fs-5" (click)="openUl($event,'ul4')"></i>
+        </div>
+        <ul id="ul4">
+          <li>subCategory</li>
+          <li>subCategory</li>
+          <li>subCategory</li>
+        </ul>
+      </li>
+      <li>
+        <p>Blog</p>
+      </li>
+      <li>
+        <p>Hot Offers</p>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.bot{
+  border-radius: 15px 15px 0 0;
+  grid-template-columns: repeat(5, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;background: #ebebeb;
+  display: grid;
+  gap: 30px;
+  div{
+    overflow: hidden;
+    padding: 12px;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="offers col-12 centerCenter pb-3">
+  <div class="col-10 d-flex flex-row headerScrollStyle">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-3 offerdiv" *ngFor="let item of offers">
+      <div class="offer d-flex p-3 align-items-center justify-content-start position-relative">
+        <div class="offerImg">
+          <div class="img" style="background-image: url('{{item.imgUrl}}');"></div>
+        </div>
+        <div class="mx-2 text">
+          <p class="offerName">{{item.name}}</p>
+          <p class="show">Show All</p>
+        </div>
+        <div class="quantity position-absolute top-0 end-0 m-2">({{item.quantity}})</div>
+      </div>
+    </div>
+  </div>
+</div>

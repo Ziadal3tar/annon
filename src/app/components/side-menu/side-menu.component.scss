@@ -1,0 +1,36 @@
+.img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+.h-0 {
+  height: 0px;
+  overflow: hidden;
+  border: 0 !important;
+  transition: height 0.3s ease;
+  /* Adjust the transition duration and timing function as needed */
+}
+
+.open {
+  // height: 200px;
+  transition: height 0.3s ease;
+  /* Adjust the transition duration and timing function as needed */
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+
+}
+.BestSellers{
+  .BestSellersImg{
+
+    .img{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+       height: 75px;
+      width: 75px;
+      border-radius: 10px;
+    }
+  }
+}

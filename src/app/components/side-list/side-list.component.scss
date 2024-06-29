@@ -1,0 +1,34 @@
+
+.firstUl{
+  >li{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.034);
+padding: 10px 0;
+p{
+  font-weight: 700;
+}
+  }
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+#ul1,
+#ul2,
+#ul3,
+#ul4 {
+  max-height: 0px;
+  overflow: hidden;
+  transition: .5s;
+  li{
+    padding: 5px 0;
+  }
+
+}
+
+.active {
+  max-height: 148px !important;
+  visibility: visible;
+  transition: .5s;
+}

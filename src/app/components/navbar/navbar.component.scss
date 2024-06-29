@@ -1,0 +1,67 @@
+.nav {
+  color: #808080;
+
+  .contact {
+    div {
+      width: 25px;
+      height: 25px;
+      background-color: #e2e6e5;
+      margin: 0 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fac231;
+
+      }
+    }
+  }
+
+  .div-3 {
+    select {
+      border: none;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+  }
+}
+
+.nav-2 {
+  .logo {
+    height: 40px;
+    background-image: url('../../../assets/images/logo/logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // @media (min-width:991px) {
+    //   background-position: left;
+
+    // }
+  }
+
+  .search {
+    input {
+      border: black;
+      outline: none;
+    }
+  }
+
+  .persoal {
+    .icon {
+      position: relative;
+      font-size: 25px;
+      cursor: pointer;
+
+      div {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        right: -7px;
+        background-color: #fac231;
+        border-radius: 50%;
+        font-size: 12px;
+      }
+    }
+  }
+}

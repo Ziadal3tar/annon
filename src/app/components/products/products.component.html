@@ -1,0 +1,348 @@
+
+<div class="products col-12 container d-flex align-items-start justify-content-center">
+  <div class="col-3 d-none d-lg-block">
+    <div class="col-12 border p-3 rounded-2">
+      <p class="fw-bold fs-5 py-2 opacity-75">CATEGORY</p>
+
+
+
+      <div class="py-2" *ngFor="let item of categories; let i = index">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <div class="centerCenter">
+            <div class="img me-2" style="background-image: url('{{item.imgUrl}}');"></div>
+            <p class="text-secondary">{{item.name}}</p>
+          </div>
+          <i class="bi bi-plus-lg cursor-pointer" id="icon{{i}}" (click)="open(i)"></i>
+        </div>
+        <div>
+        </div>
+        <div class="w-100  mt-2 h-0 transition" id="open{{i}}">
+          <div class="d-flex align-items-center justify-content-between text-secondary pt-2"
+            *ngFor="let type of item.types">
+            <p>{{type.name}}</p><span>{{type.num}}</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+    <div class="col-12 BestSellers py-5">
+      <p class="border-bottom fs-5 fw-bold">BEST SELLERS</p>
+      <div class="col-12 centerCenter my-3" *ngFor="let item of bestSeller">
+        <div class="col-3 BestSellersImg centerCenter">
+          <div class="img" style="background-image: url({{item.img}});"></div>
+        </div>
+        <div class="col-8 offset-1 ">
+          <h6 class="fw-light">{{item.name}}</h6>
+          <div>
+            <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+            <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+            <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+            <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+            <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+          </div>
+          <div class=" d-flex">
+            <del class="fs-6 fw-light me-2">{{item.lastPrice}}</del>
+            <p class=" fw-bold opacity-75">{{item.newPrice}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-11 p-3 pt-0 row">
+    <div class="col-11 row align-items-center justify-content-center m-0 p-0">
+      <div class="col-12 col-md-6 col-lg-4">
+        <p class="border-bottom fw-bold pb-2">New Arrivals</p>
+        <div class="col-12 d-flex headerScrollStyle section pb-4">
+
+          <div class=" pe-2 w-100 ">
+            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for"
+              *ngFor="let item of newArrivals let i = index" [ngClass]="{'d-none': i>3}">
+              <div class="col-12 d-flex align-items-center justify-content-between p-0">
+                <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
+                <div class="col-8 ">
+                  <h4>{{item.name}}</h4>
+                  <a href="">{{item.category}}</a>
+                  <div class="d-flex align-items-start">
+                    <p>{{item.price}}</p>
+                    <del class="mx-2">{{item.oldPrice}}</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="  w-100 ">
+            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for"
+              *ngFor="let item of newArrivals let i = index" [ngClass]="{'d-none': i<4}">
+              <div class="col-12 d-flex align-items-center justify-content-between p-0">
+                <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
+                <div class="col-8 ">
+                  <h4>{{item.name}}</h4>
+                  <a href="">{{item.category}}</a>
+                  <div class="d-flex align-items-start">
+                    <p>{{item.price}}</p>
+                    <del class="mx-2">{{item.oldPrice}}</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <p class="border-bottom fw-bold pb-2">Trending</p>
+        <div class="col-12 d-flex headerScrollStyle section pb-4">
+
+          <div class=" pe-2 w-100 ">
+            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for" *ngFor="let item of Trending let i = index"
+              [ngClass]="{'d-none': i>3}">
+              <div class="col-12 d-flex align-items-center justify-content-between p-0">
+                <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
+                <div class="col-8 ">
+                  <h4>{{item.name}}</h4>
+                  <a href="">{{item.category}}</a>
+                  <div class="d-flex align-items-start">
+                    <p>{{item.price}}</p>
+                    <del class="mx-2">{{item.oldPrice}}</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="  w-100 ">
+            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for" *ngFor="let item of Trending let i = index"
+              [ngClass]="{'d-none': i<4}">
+              <div class="col-12 d-flex align-items-center justify-content-between p-0">
+                <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
+                <div class="col-8 ">
+                  <h4>{{item.name}}</h4>
+                  <a href="">{{item.category}}</a>
+                  <div class="d-flex align-items-start">
+                    <p>{{item.price}}</p>
+                    <del class="mx-2">{{item.oldPrice}}</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <p class="border-bottom fw-bold pb-2">Top Rated</p>
+        <div class="col-12 d-flex headerScrollStyle section pb-4">
+
+          <div class=" pe-2 w-100 ">
+            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for" *ngFor="let item of topRated let i = index"
+              [ngClass]="{'d-none': i>3}">
+              <div class="col-12 d-flex align-items-center justify-content-between p-0">
+                <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
+                <div class="col-8 ">
+                  <h4>{{item.name}}</h4>
+                  <a href="">{{item.category}}</a>
+                  <div class="d-flex align-items-start">
+                    <p>{{item.price}}</p>
+                    <del class="mx-2">{{item.oldPrice}}</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="  w-100 ">
+            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for" *ngFor="let item of topRated let i = index"
+              [ngClass]="{'d-none': i<4}">
+              <div class="col-12 d-flex align-items-center justify-content-between p-0">
+                <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
+                <div class="col-8 ">
+                  <h4>{{item.name}}</h4>
+                  <a href="">{{item.category}}</a>
+                  <div class="d-flex align-items-start">
+                    <p>{{item.price}}</p>
+                    <del class="mx-2">{{item.oldPrice}}</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 headerScrollStyle  dealOfTheDay m-0 d-flex">
+
+
+      <div class="col-12 row centerCenter border rounded-3 m-0">
+        <div class="col-12 col-md-6 dealImg" style="background-image: url('../../../assets/images/products/shampoo.jpg');">
+
+        </div>
+        <div class="col-12 col-md-6 details">
+          <div>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </div>
+          <h3>SHAMPOO, CONDITIONER & FACEWASH PACKS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</p>
+          <div class="d-flex price">
+            <p class="me-2">$150.00</p>
+            <del>$200.00</del>
+          </div>
+          <div>
+            <button class="btn bg-mainColor text-white fw-bold">ADD TO CART</button>
+            <div>
+              <div class="w-100 d-flex align-items-center justify-content-between ">
+                <p class="text-black">ALREADY SOLD: <span class="fw-bold">20</span></p>
+                <p class="text-black">AVAILABLE: <span class="fw-bold">40</span> </p>
+              </div>
+              <div class="w-100 bar">
+                <div class="percent"></div>
+              </div>
+            </div>
+            <div class="pt-3">
+              <p class="fw-light fw-bold text-black py-1">HURRY UP! OFFER ENDS IN:</p>
+              <div class="w-100 d-flex counter">
+                <div class=" rounded-3 days  centerCenter flex-column">
+                  <p class="fs-5 fw-bolder text-black">360</p>
+                  <p class="  text-black">Days</p>
+                </div>
+                <div class=" rounded-3 days  centerCenter flex-column">
+                  <p class="fs-5 fw-bolder text-black">24</p>
+                  <p class="  text-black">Hours</p>
+                </div>
+                <div class=" rounded-3 days  centerCenter flex-column">
+                  <p class="fs-5 fw-bolder text-black">59</p>
+                  <p class="  text-black">Min</p>
+                </div>
+                <div class=" rounded-3 days  centerCenter flex-column">
+                  <p class="fs-5 fw-bolder text-black">00</p>
+                  <p class="  text-black">Sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="col-12 row centerCenter border rounded-3 m-0 ms-3">
+        <div class="col-12 col-md-6 dealImg" style="background-image: url('../../../assets/images/products/jewellery-1.jpg');">
+
+        </div>
+        <div class="col-12 col-md-6 details">
+          <div>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </div>
+          <h3>ROSE GOLD DIAMONDS EARRING</h3>
+          <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</p>
+          <div class="d-flex price">
+            <p class="me-2">$1990.00</p>
+            <del>$2000.00</del>
+          </div>
+          <div>
+            <button class="btn bg-mainColor text-white fw-bold">ADD TO CART</button>
+            <div>
+              <div class="w-100 d-flex align-items-center justify-content-between ">
+                <p class="text-black">ALREADY SOLD: <span class="fw-bold">15</span></p>
+                <p class="text-black">AVAILABLE: <span class="fw-bold">30</span> </p>
+              </div>
+              <div class="w-100 bar">
+                <div class="percent"></div>
+              </div>
+            </div>
+            <div class="pt-3">
+              <p class="fw-light fw-bold text-black py-1">HURRY UP! OFFER ENDS IN:</p>
+              <div class="w-100 d-flex counter">
+                <div class=" rounded-3 days  centerCenter flex-column">
+                  <p class="fs-5 fw-bolder text-black">360</p>
+                  <p class="  text-black">Days</p>
+                </div>
+                <div class=" rounded-3 days  centerCenter flex-column">
+                  <p class="fs-5 fw-bolder text-black">24</p>
+                  <p class="  text-black">Hours</p>
+                </div>
+                <div class=" rounded-3 days  centerCenter flex-column">
+                  <p class="fs-5 fw-bolder text-black">59</p>
+                  <p class="  text-black">Min</p>
+                </div>
+                <div class=" rounded-3 days  centerCenter flex-column">
+                  <p class="fs-5 fw-bolder text-black">00</p>
+                  <p class="  text-black">Sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="new col-12 py-3 row m-0 p-0 transition">
+      <div class=" border rounded-3 position-relative transition" *ngFor="let item of newProducts">
+
+        <div class="newImg transition" (mouseover)="item.hovered = true" (mouseout)="item.hovered = false"
+          [style.backgroundImage]="item.hovered ? 'url(' + item.imgs[1] + ')' : 'url(' + item.imgs[0] + ')'"></div>
+        <div class="newdetails pt-2">
+          <p class="category fw-bold">{{item.category}}</p>
+          <p class="pref m-0 opacity-75">{{item.pref}}</p>
+          <div>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </div>
+
+
+
+
+
+
+          <div class="">
+            <p class="text-black fw-bold">{{item.newPrice}}
+              <del class="mx-2 opacity-75 fw-light">{{item.lastPrice}}</del>
+          </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="btns position-absolute top-0 end-0 p-3">
+
+          <div class=" bg-white centerCenter rounded-2 border mb-2"><i class=" bi bi-heart"></i></div>
+          <div class=" bg-white centerCenter rounded-2 border mb-2"><i class=" bi bi-eye"></i></div>
+          <div class=" bg-white centerCenter rounded-2 border mb-2"><i class=" bi bi-repeat"></i></div>
+          <div class=" bg-white centerCenter rounded-2 border mb-2"><i class=" bi bi-cart"></i></div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>

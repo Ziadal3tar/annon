@@ -1,0 +1,57 @@
+<div class="col-12">
+  <div class="col-12 border p-3 rounded-2">
+
+    <div class="d-flex align-items-center justify-content-between">
+  <p class="fw-bold fs-5 py-2 opacity-75">CATEGORY</p>
+  <i class="bi bi-x-lg" (click)="close()"></i>
+
+</div>
+    <div class="py-2" *ngFor="let item of categories; let i = index">
+      <div class="d-flex align-items-center justify-content-between w-100">
+        <div class="centerCenter">
+          <div class="img me-2" style="background-image: url('{{item.imgUrl}}');"></div>
+          <p class="text-secondary">{{item.name}}</p>
+        </div>
+        <i class="bi bi-plus-lg cursor-pointer" id="icon{{i}}" (click)="open(i)"></i>
+      </div>
+      <div>
+      </div>
+      <div class="w-100  mt-2 h-0 transition" id="open{{i}}">
+        <div class="d-flex align-items-center justify-content-between text-secondary pt-2"
+          *ngFor="let type of item.types">
+          <p>{{type.name}}</p><span>{{type.num}}</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+  <div class="col-12 BestSellers py-5">
+    <p class="border-bottom fs-5 fw-bold">BEST SELLERS</p>
+    <div class="col-12 centerCenter my-3" *ngFor="let item of bestSeller">
+      <div class="col-3 BestSellersImg centerCenter">
+        <div class="img" style="background-image: url({{item.img}});"></div>
+      </div>
+      <div class="col-8 offset-1 ">
+        <h6 class="fw-light">{{item.name}}</h6>
+        <div>
+          <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+          <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+          <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+          <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+          <i class="bi bi-star-fill text-warning " style="font-size: 10px;"></i>
+        </div>
+        <div class=" d-flex">
+          <del class="fs-6 fw-light me-2">{{item.lastPrice}}</del>
+          <p class=" fw-bold opacity-75">{{item.newPrice}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
