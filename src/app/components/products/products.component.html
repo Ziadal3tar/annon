@@ -56,14 +56,14 @@
 
   </div>
 
-  <div class="col-11 p-3 pt-0 row">
-    <div class="col-11 row align-items-center justify-content-center m-0 p-0">
+  <div class="col-12 p-3 pt-0 row">
+    <div class="col-12 row align-items-center justify-content-center m-0 p-0">
       <div class="col-12 col-md-6 col-lg-4">
         <p class="border-bottom fw-bold pb-2">New Arrivals</p>
         <div class="col-12 d-flex headerScrollStyle section pb-4">
 
           <div class=" pe-2 w-100 ">
-            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for"
+            <div class="col-12 row p-3 item border overflow-hidden rounded-3 m-0 mt-3 overflow-hidden"
               *ngFor="let item of newArrivals let i = index" [ngClass]="{'d-none': i>3}">
               <div class="col-12 d-flex align-items-center justify-content-between p-0">
                 <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
@@ -79,7 +79,7 @@
             </div>
           </div>
           <div class="  w-100 ">
-            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for"
+            <div class="col-12 row p-3 item border overflow-hidden rounded-3 m-0 mt-3 for"
               *ngFor="let item of newArrivals let i = index" [ngClass]="{'d-none': i<4}">
               <div class="col-12 d-flex align-items-center justify-content-between p-0">
                 <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
@@ -102,7 +102,7 @@
         <div class="col-12 d-flex headerScrollStyle section pb-4">
 
           <div class=" pe-2 w-100 ">
-            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for" *ngFor="let item of Trending let i = index"
+            <div class="col-12 row p-3 item border overflow-hidden rounded-3 m-0 mt-3 for" *ngFor="let item of Trending let i = index"
               [ngClass]="{'d-none': i>3}">
               <div class="col-12 d-flex align-items-center justify-content-between p-0">
                 <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
@@ -118,7 +118,7 @@
             </div>
           </div>
           <div class="  w-100 ">
-            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for" *ngFor="let item of Trending let i = index"
+            <div class="col-12 row p-3 item border overflow-hidden rounded-3 m-0 mt-3 for" *ngFor="let item of Trending let i = index"
               [ngClass]="{'d-none': i<4}">
               <div class="col-12 d-flex align-items-center justify-content-between p-0">
                 <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
@@ -141,7 +141,7 @@
         <div class="col-12 d-flex headerScrollStyle section pb-4">
 
           <div class=" pe-2 w-100 ">
-            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for" *ngFor="let item of topRated let i = index"
+            <div class="col-12 row p-3 item border overflow-hidden rounded-3 m-0 mt-3 for" *ngFor="let item of topRated let i = index"
               [ngClass]="{'d-none': i>3}">
               <div class="col-12 d-flex align-items-center justify-content-between p-0">
                 <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>
@@ -157,7 +157,7 @@
             </div>
           </div>
           <div class="  w-100 ">
-            <div class="col-12 row p-3 item border rounded-3 m-0 mt-3 for" *ngFor="let item of topRated let i = index"
+            <div class="col-12 row p-3 item border overflow-hidden rounded-3 m-0 mt-3 for" *ngFor="let item of topRated let i = index"
               [ngClass]="{'d-none': i<4}">
               <div class="col-12 d-flex align-items-center justify-content-between p-0">
                 <div class="col-4 img" style="background-image: url('{{item.imgUrl}}');"></div>

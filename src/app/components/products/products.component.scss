@@ -200,7 +200,7 @@
     >div {
       height: 400px !important;
     }
-    .newImg {height: 70% !important;}
+    .newImg {height: 66% !important;}
   }
 
   display: grid;
@@ -253,6 +253,11 @@
       .newdetails {
         .category {
           color: #fac231;
+        }
+        .pref {
+          text-wrap: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
     }

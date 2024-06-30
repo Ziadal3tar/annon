@@ -10,7 +10,7 @@
       }
     }
 
-    div {
+    >div {
       background-size: cover;
       background-position: right;
       background-repeat: no-repeat;
@@ -19,6 +19,11 @@
       border-radius: 15px;
       @media (max-width:900px) {
         height: 350px;
+      }
+      .detailsBg{
+        @media (min-width:768px) {
+          background-color: #e6e6e600 !important;
+        }
       }
       div {
             @media  (max-width:900px) {
@@ -89,7 +94,10 @@
     .div-3 {
       background-image: url('../../../assets/images/banner-3.jpg');
       background-position: top !important;
+      @media (max-width:576px) {
+        background-position: right !important;
 
+      }
     }
 
   }
